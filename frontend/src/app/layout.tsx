@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 
 // ========== SEO 元数据 ==========
 export const metadata: Metadata = {
-  title: "AI 跨境电商智能选品分析平台",
+  title: "Aoxia Lite - AI选品助手",
   description:
-    "AI 驱动的跨境电商智能选品分析工具，帮助卖家精准选品、洞察市场趋势",
+    "AI驱动的跨境电商智能选品助手 — 发现热销商品，洞察市场机会",
 };
 
 // ========== 根布局组件 ==========

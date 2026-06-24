@@ -7,7 +7,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Moon, Sun, ShoppingBag, Calculator } from "lucide-react";
+import { Moon, Sun, LayoutDashboard, Flame, Target, GitBranch, ShoppingBag, Calculator } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { PlatformTabs } from "@/components/platform-tabs";
@@ -15,6 +15,10 @@ import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
   { href: "/", label: "首页", icon: null },
+  { href: "/dashboard", label: "仪表盘", icon: LayoutDashboard },
+  { href: "/hot-products", label: "热销商品", icon: Flame },
+  { href: "/opportunities", label: "机会挖掘", icon: Target },
+  { href: "/workflow", label: "Workflow", icon: GitBranch },
   { href: "/products", label: "商品列表", icon: ShoppingBag },
   { href: "/profit-calculator", label: "利润计算器", icon: Calculator },
 ];
@@ -32,10 +36,10 @@ export function NavBar() {
           className="flex items-center gap-2 font-bold text-foreground hover:opacity-80 transition-opacity"
         >
           <span className="hidden sm:inline bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            AI 智能选品
+            Aoxia Lite
           </span>
           <span className="sm:hidden bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent text-sm">
-            AI选品
+            Aoxia
           </span>
         </Link>
 
